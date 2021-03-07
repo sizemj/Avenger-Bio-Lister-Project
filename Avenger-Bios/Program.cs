@@ -1,4 +1,6 @@
-﻿namespace AvengersBioLister
+﻿using AvengersBioLister.Utilitiies;
+
+namespace AvengersBioLister
 {
     class Program
     {
@@ -12,7 +14,9 @@
             menu.DisplayMainMenu(options);
 
             //Gets choice form user.
-            menu.GetMenuSelection(options);
+            var heroSelected = menu.GetMenuSelection(options);
+            GetHeroBio.PullBio(heroSelected);
+
         }
     }
 }
