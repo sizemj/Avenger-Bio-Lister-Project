@@ -1,5 +1,6 @@
 ﻿using AvengersBioLister.Utilitiies;
-
+using System.Threading.Tasks;
+using System;
 namespace AvengersBioLister
 {
     class Program
@@ -15,7 +16,8 @@ namespace AvengersBioLister
 
             //Gets choice form user.
             var heroSelected = menu.GetMenuSelection(options);
-            GetHeroBio.PullBio(heroSelected);
+            var test = GetHeroBio.PullBioAsync(heroSelected);
+
 
         }
     }

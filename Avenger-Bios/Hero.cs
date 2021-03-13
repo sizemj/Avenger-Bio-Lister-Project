@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using AvengersBioLister.Models;
 
 namespace AvengersBioLister
 {
     public class Hero
     {
-
-        public Bio bio { get; set; }
+        public string Name { get; set; }
+        public Biography biography { get; set; }
+        public Appearance appearance { get; set; }
+        public Work work { get; set; }
+        public Connections connections { get; set; }
 
     }
 }
