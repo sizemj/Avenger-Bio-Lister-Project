@@ -22,7 +22,6 @@ namespace AvengersBioLister
             var heroSelected = menu.GetMenuSelection(options);
             await GetHeroBio.PullBioAsync(heroSelected);
 
-
         }
     }
 }

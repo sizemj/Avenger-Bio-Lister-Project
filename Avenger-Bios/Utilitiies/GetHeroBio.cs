@@ -28,7 +28,7 @@ namespace AvengersBioLister.Utilitiies
                 Console.WriteLine("");
                 Console.WriteLine("##################################\n");
                 Console.WriteLine($"Character Name: {antManBio.Name}\n");
-                Console.WriteLine("Character Biography\n");
+                Console.WriteLine("Character Biography");
                 Console.WriteLine($"Character Name: {antManBio.biography.FullName}");
                 Console.WriteLine($"Character Alias: {antManBio.biography.Aliases[1]}");
                 Console.WriteLine($"Character Place of Birth: {antManBio.biography.PlaceOfBirth}\n");
