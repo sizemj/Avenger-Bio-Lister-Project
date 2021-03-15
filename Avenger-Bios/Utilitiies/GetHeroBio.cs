@@ -23,7 +23,6 @@ namespace AvengersBioLister.Utilitiies
             {
                 var responseAntMan = client.GetAsync($"{baseUrl}{access_token}/30").Result;
                 var responseBody = await responseAntMan.Content.ReadAsStringAsync();
-                //var antManBioSerilized = JsonConvert.SerializeObject(File.ReadAllText(responseBody).);
                 var antManBio = JsonConvert.DeserializeObject<Avenger>(responseBody);
                 Console.WriteLine("");
                 Console.WriteLine("##################################\n");
