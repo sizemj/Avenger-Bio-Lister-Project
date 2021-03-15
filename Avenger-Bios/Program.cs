@@ -1,11 +1,15 @@
 ﻿using AvengersBioLister.Utilitiies;
 using System.Threading.Tasks;
 using System;
+using Newtonsoft.Json;
+using System.Net.Http;
+using System.IO;
+
 namespace AvengersBioLister
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             MainMenu menu = new MainMenu();
 
@@ -16,7 +20,7 @@ namespace AvengersBioLister
 
             //Gets choice form user.
             var heroSelected = menu.GetMenuSelection(options);
-            var test = GetHeroBio.PullBioAsync(heroSelected);
+            await GetHeroBio.PullBioAsync(heroSelected);
 
 
         }
