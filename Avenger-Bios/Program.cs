@@ -11,11 +11,11 @@ namespace AvengersBioLister
     {
         static async Task Main(string[] args)
         {
+
             MainMenu menu = new MainMenu();
 
             //Set up my menu options
             var options = menu.BuildMainMenu();
-
             menu.DisplayMainMenu(options);
 
             //Gets choice form user.

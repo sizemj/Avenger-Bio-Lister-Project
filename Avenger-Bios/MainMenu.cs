@@ -18,6 +18,7 @@ namespace AvengersBioLister
                 new MenuOption("Hawkeye"),
                 new MenuOption("Hulk"),
                 new MenuOption("Iron Man"),
+                new MenuOption("Scarlet Witch"),
                 new MenuOption("Spider-Man (Peter Parker)"),
                 new MenuOption("Thor"),
                 new MenuOption("Vision")
